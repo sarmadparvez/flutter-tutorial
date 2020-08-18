@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
                           TextFormField(
                             controller: _usernameController,
                             keyboardType: TextInputType.emailAddress,
-                            validator: (s) {},
+                            validator: (s) {return "";},
                             decoration: InputDecoration(
                                 hintText: "Enter Email", labelText: "Username"),
                           ),
@@ -54,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           TextFormField(
                             controller: _passwordController,
-                            validator: (s) {},
+                            validator: (s) {return "";},
                             keyboardType: TextInputType.text,
                             obscureText: true,
                             decoration: InputDecoration(
