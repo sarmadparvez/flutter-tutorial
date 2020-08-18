@@ -1,16 +1,7 @@
 # awesome_app
 
-A new Flutter project.
+Material Drawer | ListView | Circle Avatar | NetworkImage | TextField | Floating Action Button
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot](https://user-images.githubusercontent.com/19534452/96372667-321d8b00-1168-11eb-9b23-9a29ab6eed3b.png)
+![Screenshot](https://user-images.githubusercontent.com/19534452/96372671-36e23f00-1168-11eb-8b0f-fea79442a4a3.png)
+![Screenshot](https://user-images.githubusercontent.com/19534452/96372675-38ac0280-1168-11eb-88ae-f6d820fcd31d.png)
