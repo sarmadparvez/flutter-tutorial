@@ -6,13 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-class HomePage extends StatefulWidget {
-  static const String routeName = "/home";
+class HomePageFB extends StatefulWidget {
+  static const String routeName = "/homefb";
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomePageFBState createState() => _HomePageFBState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageFBState extends State<HomePageFB> {
   //var myText = "Change My Name";
   // TextEditingController _nameController = TextEditingController(); // controller for text field
 
