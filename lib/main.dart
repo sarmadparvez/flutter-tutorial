@@ -13,7 +13,25 @@ void main() {
   );
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  var myText = "Change My Name";
+  TextEditingController _nameController =
+      TextEditingController(); // controller for text field
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +56,7 @@ class HomePage extends StatelessWidget {
                   height: 20,
                 ),
                 Text(
-                  "Change my name",
+                  myText,
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
@@ -47,6 +65,7 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: TextField(
+                    controller: _nameController,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: "Enter text here",
@@ -96,7 +115,10 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          myText = _nameController.text;
+          setState(() {});
+        },
         child: Icon(Icons.send),
       ),
       //floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
