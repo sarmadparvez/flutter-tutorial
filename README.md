@@ -1,2 +1,2 @@
 # flutter-tutorial
-Learn flutter to build Android and IOS Applications.
+Learn Flutter cross platoform mobile application development framework by Google.
