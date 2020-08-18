@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-class HomePageFB extends StatelessWidget {
+class HomePageSB extends StatelessWidget {
   //var myText = "Change My Name";
   // TextEditingController _nameController = TextEditingController(); // controller for text field
 
@@ -17,6 +17,13 @@ class HomePageFB extends StatelessWidget {
     //print(res.body);
     //print(data);
     //setState(() {});
+    return data;
+  }
+
+  Stream<List<String>> getStream() {
+    var data = Stream<List<String>>.fromIterable([
+      List<String>.generate(20, (index) => "Item $index"),
+    ]);
     return data;
   }
 
@@ -40,9 +47,11 @@ class HomePageFB extends StatelessWidget {
               })
         ],
       ),
-      body: FutureBuilder(
-        future: fetchData(),
+      body: StreamBuilder(
+        stream: getStream(),
         builder: (context, snapshot) {
+          //print("data");
+          //print(snapshot.data);
           switch (snapshot.connectionState) {
             case ConnectionState.none:
               return Center(
@@ -61,9 +70,9 @@ class HomePageFB extends StatelessWidget {
               return ListView.builder(
                 itemBuilder: (context, index) {
                   return ListTile(
-                    title: Text(snapshot.data[index]["title"]),
-                    subtitle: Text("ID: ${snapshot.data[index]["id"]}"),
-                    leading: Image.network(snapshot.data[index]["url"]),
+                    title: Text(snapshot.data[index]),
+                    //subtitle: Text("ID: ${snapshot.data[index]["id"]}"),
+                    //leading: Image.network(snapshot.data[index]["url"]),
                   );
                 },
                 itemCount: snapshot.data.length,
