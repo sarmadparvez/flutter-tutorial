@@ -2,16 +2,21 @@
 Learn Flutter cross platform mobile application development from scratch.
 
 ## Resources
-- [Chapter 1](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_1): Home page with app bar and body with text inside container
-- [Chapter 2](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_2)
-- [Chapter 3](https://github.com/sarmadparvez/flutter-tutorial/tree/ch3_rows_cols)
-- [Chapter 4](https://github.com/sarmadparvez/flutter-tutorial/tree/ch4_drawer_card_field)
-- [Chapter 5](https://github.com/sarmadparvez/flutter-tutorial/tree/ch5_app_structuring)
-- [Chapter 6](https://github.com/sarmadparvez/flutter-tutorial/tree/ch6_dynamic_list_view)
-- [Chapter 7](https://github.com/sarmadparvez/flutter-tutorial/tree/ch7_login_navigation)
-- [Chapter 8](https://github.com/sarmadparvez/flutter-tutorial/tree/ch8_future_builder)
-- [Chapter 9](https://github.com/sarmadparvez/flutter-tutorial/tree/ch9_stream_builder_list)
+- [Chapter 1](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_1): Home page with app bar and body with text inside container.
+- [Chapter 2](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_2): Text Box with styling, in the center of screen.
+- [Chapter 3](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_3): Rows and columns.
+- [Chapter 4](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_4): Material Drawer | ListView | Circle Avatar | NetworkImage | TextField | Floating Action Button | Card | Asset Images | ScrollView
+- [Chapter 5](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_5): Structuring the application code from Chapter 4.
+- [Chapter 6](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_6): ListView with data from an HTTP call.
+- [Chapter 7](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_7): Login page using Form and Stack, and navigation between the widgets. Use shared preferences to maintain the application state.
+- [Chapter 8](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_8): Using FutureBuilder to build the ListView.
+- [Chapter 9](https://github.com/sarmadparvez/flutter-tutorial/tree/chapter_9): Using StreamBuilder to build the ListView.
 
 
 ## What I learned
-- Building a flutter app from scratch
+- Basic concepts needed for building a Flutter Application.
+- Develop User Interface in Flutter.
+- Create a dynamic list view with data from a network call.
+- Maintaining application state.
+- Navigation within the app.
+- Use of FutureBuilder and StreamBuilder.
